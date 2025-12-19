@@ -1,5 +1,5 @@
 // Service API pour communiquer avec le serveur MCP
-const API_BASE_URL = (import.meta.env.VITE_API_URL || 'https://agent3-s7b6.onrender.com').replace(/\/$/, '');
+export const API_BASE_URL = (import.meta.env.VITE_API_URL || 'https://agent3-s7b6.onrender.com').replace(/\/$/, '');
 
 /**
  * Envoie un message à l'agent via le serveur MCP

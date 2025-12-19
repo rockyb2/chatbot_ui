@@ -144,7 +144,7 @@
     </div>
 </template>
 <script>
-import { sendMessage, checkConnection, getSessionId, resetSession } from './services/api.js';
+import { sendMessage, checkConnection, getSessionId, resetSession, API_BASE_URL } from './services/api.js';
 
 export default {
   name: 'App',
@@ -164,7 +164,7 @@ export default {
       answer: '',
       fileUrl: null,
       fileName: null,
-      serverBase: 'http://127.0.0.1:8000'
+      serverBase: API_BASE_URL
     };
   },
   mounted() {
