@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: client-mcp1
+    runtime: node
+    buildCommand: npm install && npm run build
+    startCommand: npm install -g serve && serve -s dist -l 3000
+    envVars:
+      - key: VITE_API_URL
+        value: https://agent3-s7b6.onrender.com
