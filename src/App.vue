@@ -37,7 +37,7 @@
                             <span v-if="message.role === 'assistant'" class="text-2xl">🤖</span>
                             <span v-else class="text-2xl">👤</span>
                             <div class="flex-1">
-                                <p class="whitespace-pre-wrap break-words">{{ message.content }}</p>
+                                <p class="whitespace-pre-wrap break-word">{{ message.content }}</p>
                                 <p class="text-xs mt-2 opacity-70">
                                     {{ formatTime(message.timestamp) }}
                                 </p>
